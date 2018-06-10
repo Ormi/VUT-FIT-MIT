@@ -1,0 +1,25 @@
+\select@language {english}
+\contentsline {chapter}{\numberline {1}Distributed systems}{2}
+\contentsline {section}{\numberline {1.1}History}{2}
+\contentsline {subsection}{\numberline {1.1.1}High-Performance Computing (HPC)}{2}
+\contentsline {subsection}{\numberline {1.1.2}High-Throughput Computing (HTC)}{3}
+\contentsline {subsection}{\numberline {1.1.3}Computing paradigms}{3}
+\contentsline {subsection}{\numberline {1.1.4}Design objectives:}{5}
+\contentsline {section}{\numberline {1.2}Scalable computing trends}{5}
+\contentsline {subsection}{\numberline {1.2.1}Amdahl's and Gustafson's Law}{8}
+\contentsline {chapter}{\numberline {2}Clusters}{9}
+\contentsline {section}{\numberline {2.1}Design principles of clusters}{9}
+\contentsline {subsection}{\numberline {2.1.1}Scalability}{9}
+\contentsline {subsection}{\numberline {2.1.2}High-Availability (HA) capability}{13}
+\contentsline {section}{\numberline {2.2}Massively Parallel Processing (MPP)}{13}
+\contentsline {section}{\numberline {2.3}Job Scheduling Methods}{14}
+\contentsline {chapter}{\numberline {3}Virtualization}{16}
+\contentsline {section}{\numberline {3.1}Virtual Machines}{16}
+\contentsline {subsection}{\numberline {3.1.1}Hypervisor Architecture}{17}
+\contentsline {subsection}{\numberline {3.1.2}Virtualization of Input/Output (I/O)}{19}
+\contentsline {subsection}{\numberline {3.1.3}Live VM migration}{21}
+\contentsline {chapter}{\numberline {4}Clouds}{23}
+\contentsline {section}{\numberline {4.1}Warehouse-Scale Data-Center design}{25}
+\contentsline {section}{\numberline {4.2}Layered cloud architectural development}{26}
+\contentsline {subsection}{\numberline {4.2.1}Challenges of architectural design}{28}
+\contentsline {subsection}{\numberline {4.2.2}Cloud security}{29}
