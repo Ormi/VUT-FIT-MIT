@@ -1,0 +1,53 @@
+CPME Lab1
+Michal Ormos
+
+Machine
+=======
+ormos-ThinkPad-E450
+Dual-Core Intel® Core™ i3-4005U CPU @ 1.70GHz
+Intel Corporation Haswell-ULT Integrated Graphics Controller (rev 0b)
+12,0 GB memory
+56,6 GB storage
+
+OS
+==
+elementary OS 0.4.1 Loki 64B-bit
+Built on "Ubuntu 16.04.3 LTS"
+Linux 4.13.0-32-generic
+GTK+ 3.18.9
+
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.6) 
+
+ulimit -s 1000000
+
+===============================================================================
+
+// 5 runs for all, for getting average time
+
+original code (with -O3)
+========================
+gaussSeidel.c
+Checksum: -95235.14485691
+
+real	0m34.923s
+user	0m34.824s
+sys	0m0.049s
+
+optimalizations (with -O3)
+==========================
+
+Same for old gaussSeidel and new version of GaussSeidel from Monday.
+
+I was trying caching, tiling, reverse cycles (from SIZE to 0), rebuilding algorithms but my time was still the same, worse or computing failed because I get wrong check-sum.
+
+gaussSeidel3.c
+	trying tiling as seen on laboratories, with triangulation method and SIZE exact to 2879 (prime number) it was imposible. Trying to optimize 2D arrays to 1D arrays, without success
+
+gaussSeidel4.c
+	basic loop gathering, optimizing with temp variables to save array memory readings, dividiving the whole equation to get multiplication separately. No significant speed-up
+
+gaussSeidel5.c
+	using basic loop nest optimatization to gaussSeidel4.c, worst.
+
+gaussSeidel6.c
+	rebuilding the whole algorithm, not succesfull check sum.

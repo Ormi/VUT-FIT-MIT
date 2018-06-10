@@ -1,0 +1,51 @@
+CPME Lab5
+Michal Ormos
+
+Machine
+=======
+ormos-ThinkPad-E450
+Dual-Core Intel® Core™ i3-4005U CPU @ 1.70GHz
+Intel Corporation Haswell-ULT Integrated Graphics Controller (rev 0b)
+12,0 GB memory
+56,6 GB storage
+
+OS
+==
+elementary OS 0.4.1 Loki 64B-bit
+Built on "Ubuntu 16.04.3 LTS"
+Linux 4.13.0-32-generic
+GTK+ 3.18.9
+
+gcc version 5.4.0 20160609 (Ubuntu 5.4.0-6ubuntu1~16.04.6) 
+
+ulimit -s 1000000
+Architecture:          x86_64
+CPU op-mode(s):        32-bit, 64-bit
+Byte Order:            Little Endian
+CPU(s):                4
+On-line CPU(s) list:   0-3
+Thread(s) per core:    2
+Core(s) per socket:    2
+Socket(s):             1
+NUMA node(s):          1
+Vendor ID:             GenuineIntel
+CPU family:            6
+Model:                 69
+Model name:            Intel(R) Core(TM) i3-4005U CPU @ 1.70GHz
+Stepping:              1
+CPU MHz:               1696.102
+CPU max MHz:           1700,0000
+CPU min MHz:           800,0000
+BogoMIPS:              3392.20
+Virtualization:        VT-x
+L1d cache:             32K
+L1i cache:             32K
+L2 cache:              256K
+L3 cache:              3072K
+NUMA node0 CPU(s):     0-3
+
+===========================================================================
+
+pingPongTasks - DONE
+waveFrontLoop - FAIL
+waveFrontTask - DONE

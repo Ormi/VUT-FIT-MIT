@@ -1,0 +1,20 @@
+
+Realizar una implementación del siguiente algoritmo:
+
+   // Inicialización
+   for i in [1:N]:
+	   x[0,i] = <valor aleatorio>
+	   x[i,0] = <valor aleatorio>
+ 
+   // Computo 
+   for i in [1:N]:
+	   for j in [1:N]:
+		   x[i,j] = x[i-1,j]+x[i,j-1]
+
+
+Los bucles de la parte de computo no se pueden paralelizar directamente.
+
+1. Reordenar las operaciones para poder paralelizar el computo con paralelismos de bucles
+
+2. Utilizar tareas con dependencias para paralelizar el código sin cambiarlo, sólo añadiendo las directivas necesarias
+

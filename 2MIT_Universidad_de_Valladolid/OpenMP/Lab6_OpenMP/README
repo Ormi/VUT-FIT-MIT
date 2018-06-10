@@ -1,0 +1,28 @@
+
+Realizar una implementación del siguiente algoritmo:
+
+   // Inicialización
+   for i in [1:N]:
+	   x[0,i] = <valor aleatorio>
+	   x[i,0] = <valor aleatorio>
+ 
+   // Computo 
+   for t in [1:N*2]:
+	   for i in [1:N]:
+		   x[0,i] = <valor aleatorio>
+		   x[i,0] = <valor aleatorio>
+       
+	   for i in [1:N]:
+		   for j in [1:N]:
+			   x[i,j] = x[i-1,j]+x[i,j-1]
+
+
+
+1. Crear una versión funcional basada en paralelismo de tareas que explote todo el
+	paralelismo del macropipeline
+
+2. Crear una versión más eficiente utilizando bloques
+	Cada bloque tiene las dependencias con otros bloques siguiendo el patrón.
+	Cada bloque se computa por separado como un pequeño wave-front.
+
+

@@ -1,0 +1,23 @@
+
+Este ejemplo intenta simular un ejemplo básico de productor/consumidor, o de paso
+de testigo entre dos hilos.
+
+El programa debe hacer que dos hilos cualquiera comiencen a escribir alternativamente
+Ping o Pong en pantalla con intervalos de aproximadamente 1 segundo entre cada escritura. 
+La idea es que los Ping los escriba un hilo cualquiera pero siempre el mismo (productor)
+y los Pong los escriba otro hilo cualquiera pero siempre el mismo (consumidor).
+
+Los códigos suministrados intentan mostrar problemas típicos cuando se intenta resolver
+un ejemplo de este estilo utilizando sólo las directivas y cláusulas simples de OpenMP. 
+
+1. Explorar los códigos, compilaros y probarlos con 4 threads en las siguientes versiones:
+	- En paralelo sin activar optimizaciones
+	- En paralelo activando -O2
+	- En secuencial sin OpenMP activado
+
+¿En qué versiones las tareas de escribir Ping o Pong se asignan siempre a los mismos hilos?
+¿En qué versiones las ejecuciones paralelas funcionan correctamente con y sin optimización -O2?
+¿En que versiones la compilación sin OpenMP activado sigue funcionando correctamente?
+
+2. Escribir una versión correcta del programa Ping/Pong utilizando tareas OpenMP 3.x
+
