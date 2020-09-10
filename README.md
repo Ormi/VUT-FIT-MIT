@@ -35,6 +35,6 @@ BMS - Wireless and Mobile Networks 15/15
 6 MIT - Sisxt Term  
 ----------------------
 KKO - Data Coding and Compression 35/30  
-PIS - [Advanced Information Systems](https://github.com/tammar96/piswap/pull/23#event-3261913057) 27/30  
+PIS - [Advanced Information Systems](https://github.com/tammar96/piswap) 27/30  
 SPP - Fault Tolerant Systems 23/30  
 DIP	- Master's Thesis A/B  
