@@ -1,0 +1,27 @@
+Spustenie node
+    python3 pds18-node.py --id <identifikátor> --reg-ipv4 <IP> --reg-port <port>
+
+Spustenie peera
+    python3 pds18-peer.py --id <identifikátor> --username <user> --chat-ipv4 <IP> --chat-port <port> --reg-ipv4 <IP> --reg-port <port>
+
+Spustenie RPC a podporovane prikazy
+    Vysledky RPC prikazov sa vypisuje na node/peer a nie samotny RPC
+    python3 pds18-peer.py --peer --command message --from <username1> --to <username2> --message <zpráva>
+    python3 pds18-peer.py --peer --command getlist
+    python3 pds18-peer.py --peer --command peers
+    python3 pds18-peer.py --peer --command reconnect --reg-ipv4 <IP> --reg-port <port>
+    python3 pds18-peer.py --node --command database
+
+Rozsirenia
+    ziadne
+
+Obmedzenia
+    1)
+    Node nedokaze vykonat nasledujuce prikazy a teda ani komunikovat s inymi node.
+    Teda full-mesh siet nie je implementovana.
+        --node --command neighbors
+        --node --command connect --reg-ipv4 <IP> --reg-port <port>
+        --node --command disconnect
+        --node --command sync
+    2)
+    Subor network.dat, ktory drzi informacie o infrastrukture niekedy z neznameho dovodu zapisu/citania spadne 'raise JSONDecodeError("Expecting value", s, err.value) from None' a je potrebne ho z tohto dovodu zo systemu vymazat 'rm network.dat' po naslednom znovapusteni sluzieb si sluzby vytvoria novy.

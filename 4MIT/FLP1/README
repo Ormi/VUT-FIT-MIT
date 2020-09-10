@@ -1,0 +1,52 @@
+FLP projekt 1: simplify-bkg
+Michal Ormos (xormos00)
+
+V zdrojovych kodoch je prilozeny subor Makefile, pomocou ktoreho je program mozne prelozit pomocou prikazu make
+Po uspesnom prelozeni vznikne spustitelny subor simplify-bkg, ktory je mozne spustit nasledovne:
+
+simplify-bkg prepinac [vstup]
+
+prepinac je parameter, ktory ovplyvnuje chovanie programu a ich pouzitie je nasledovne:
+	-i: Vypise sa nacitana a do vnutornej reprezentacie prevedena BKG na stdout v dohodnutom formate (vid. format vstupu/vystupu)
+	-1: Vypise sa BKG G' (po prvom kroku algoritmu 4.3) na stdout v dohodnutom formate (vid. format vstupu/vystupu).
+	-2: Vypise sa BKG G'' (po druhom kroku algoritmu 4.3) na stdout v dohodnutom formate (vid. format vstupu/vystupu).
+
+[vstup] je volitelny parameter, ktory znaci meno vstupneho suboru, ak nie je zadany cita sa zo standardneho vstupu.
+
+Format vstupu/vystupu:
+<zoznam vsetkych neterminalov>\n
+<zoznam vsetkych terminalov>\n
+<pociatocny neterminal>\n
+<pravidlo 1>\n
+...
+<pravidlo n>\n
+
+Priklad vstupu:
+S,A,B,C
+a,b
+S
+S->AB
+S->a
+A->BC
+A->b
+B->aB
+B->C
+C->aC
+C->B
+
+
+Priklad spustenia programu
+./simplify-bkg -1 test.txt
+
+Format vystupu:
+S,A
+a,b
+S
+S->a
+A->b
+
+Popis jednotlivych suborov
+Makefile - prelozenie programu v jazyku haskell
+SimplifyBKGData.hs - Datove struktury reprezentujuce BKG
+SimplifyBKGMain.hs - Spracovanie argumentov a nacitanie suboru
+SimplifyBKGCore.hs - kontrola vstupu, 1. krok algoritmu, 2. krok algoritmu
