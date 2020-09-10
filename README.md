@@ -25,7 +25,7 @@ PRL 2  - Parallel and Distributed Algorithms 10/10
 PRL 3  - Parallel and Distributed Algorithms 9/10  
 KRY 1  - Cryptography 5/8  
 KRY 2  - Cryptography - Elliptic Curve Cryptography 7/7  
-PDS - 	Data Communications, Computer Networks and Protocols - Hybrid Chating P2P network  
+PDS - Data Communications, Computer Networks and Protocols - Hybrid Chating P2P network 14/25  
 
 5 MIT - Fifth Term  
 ----------------------
